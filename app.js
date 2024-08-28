@@ -44,11 +44,17 @@ const handleIntersect = function (entries, observer) {
 }
 
 //Ouverture / Fermeture du Menu
-const myMenu = document.querySelector(".menu");
-const navBar = document.querySelector(".navbar");
+let menuList = document.getElementById("menuList");
+menuList.style.maxHeight = "0px";
 
-myMenu.addEventListener('click',()=>{
-  navBar.classList.toggle('mobile-menu')
-})
+function toggleMenu(){
+  if(menuList.style.maxHeight == "0px")
+  {
+    menuList.style.maxHeight = "300px";
+  }
+  else{
+    menuList.style.maxHeight = "0px";
+  }
+}
 
 
