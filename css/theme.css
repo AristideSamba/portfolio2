@@ -245,7 +245,7 @@ footer .footer-contenu{
     height: 70px;
     display: flex;
     align-items: center;
-    z-index: 10;
+    z-index: 1000;
 }
 footer p, footer .navbar a{
     color: var(--hover-color);
@@ -323,7 +323,7 @@ footer .navbar a:hover{
 @media screen and (max-width: 500px){
 
     .section-one{
-        margin: 20px 50px;
+        margin: 50px 50px;
     }
     footer .navbar{
         display: none;
@@ -331,15 +331,12 @@ footer .navbar a:hover{
     footer p{
         position: absolute;
         font-size: 1.5rem;
-        z-index: 100;
+        text-align: center;
     }
     footer .arrow{
         margin-bottom: -40px; 
     }
-    .section-one{
-        top: 50px;
-        margin-bottom: 130px;
-    }
+
     .section-one h1{
         font-size: 3.5rem;
     }
@@ -349,6 +346,9 @@ footer .navbar a:hover{
     .section-one{
         width: 70%;
         left: 15%;
+    }
+    .section-two{
+        margin-bottom: 200px;
     }
     .section-two .text-accueil p{
         font-size: 1.8rem;
