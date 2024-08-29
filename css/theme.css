@@ -62,7 +62,7 @@ header{
     display: none;
     width: 100%;
     height: 1px;
-    background-color: #939597;
+    background-color: #4a4a4b;
 }
     
 
@@ -367,13 +367,13 @@ footer .navbar a:hover{
     }
     .section-two .image-accueil{
         width: 100%;
-        height: 250px;
+        height: 200px;
     }
     .section-two .text-accueil p{
         font-size: 1.8rem;
     }
     .section-two .text-accueil{
-        height: 250px;
+        height: 200px;
         width: 100%;
         padding: 0 20px;
         gap: 2px;
