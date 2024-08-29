@@ -57,10 +57,15 @@ header{
 .navbar ul li.active a{
     color: blue;
 }
+
+.navbar hr{
+    display: none;
+    border-top: solid .1rem #040404;
+    width: 100%;
+}
 /*Les icones contact de la navbar*/
 .contact-icons{
     display: flex;
-    justify-content: space-between;
     gap: 10px;
     right: 10%;
 }
@@ -270,7 +275,7 @@ footer .navbar a:hover{
     header .navbar{
         position: absolute;
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         background-color: #242423;
         right: 0;
         top: 80px;
@@ -278,21 +283,24 @@ footer .navbar a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 30px;
         overflow: hidden;
-    
     }
 
     header .navbar ul{
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .contact-icons{
-        display: block;
+    .navbar ul li a{
+        font-size: 2rem;
     }
     .section-two .text-accueil p{
         font-size: 2.5rem;
         line-height: 3.5rem;
+    }
+    .navbar hr{
+        display: block;
     }
 
     .menu{
@@ -301,6 +309,17 @@ footer .navbar a:hover{
 
     #menuList{
         transition: all .3s;
+    }
+    /*Les icones*/
+
+    .contact-icons{
+        display: block;
+        gap: 50px;
+        right: 0;
+    }
+    .contact-icons img{
+        width: 40px;
+        height: 40px;
     }
     /*pied de page*/
     footer p{
@@ -340,19 +359,23 @@ footer .navbar a:hover{
     .section-two{
         margin-bottom: 200px;
     }
+    .section-two .contenu-accueil{
+        flex-direction: column;
+    }
+    .section-two .image-accueil{
+        width: 100%;
+        height: 250px;
+    }
     .section-two .text-accueil p{
         font-size: 1.8rem;
     }
     .section-two .text-accueil{
-        height: 300px;
-        width: 60%;
+        height: 250px;
+        width: 100%;
         padding: 0 20px;
         gap: 2px;
     }
-    .section-two .image-accueil{
-        width: 65%;
-        height: 300px;
-    }
+
     .section-two .text-accueil p span{
         line-height: 2rem;
         letter-spacing: .4rem;
