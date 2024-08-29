@@ -13,9 +13,10 @@ sr.reveal('.dev-paragraph', {
     delay: 1000
 });
 sr.reveal('.section-two', {
-    distance:'150px',
-    duration: 1000,
-    delay: 2500
+    distance:'0px',
+    duration: 2000,
+    opacity: 0,
+    delay: 2500,
 });
 
 const ratio = .1

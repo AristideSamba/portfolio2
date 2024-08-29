@@ -58,11 +58,14 @@ header{
     color: blue;
 }
 
-.navbar hr{
+.navbar .separateur{
     display: none;
-    border-top: solid .1rem #040404;
     width: 100%;
+    height: 1px;
+    background-color: #939597;
 }
+    
+
 /*Les icones contact de la navbar*/
 .contact-icons{
     display: flex;
@@ -299,7 +302,7 @@ footer .navbar a:hover{
         font-size: 2.5rem;
         line-height: 3.5rem;
     }
-    .navbar hr{
+    .navbar .separateur{
         display: block;
     }
 
@@ -335,7 +338,7 @@ footer .navbar a:hover{
 @media screen and (max-width: 500px){
 
     .section-one{
-        margin: 50px 50px;
+        margin: 30px 50px;
     }
     footer .navbar{
         display: none;
