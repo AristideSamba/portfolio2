@@ -159,6 +159,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
 }
 .section-two .image-accueil{
     width: 40%;
