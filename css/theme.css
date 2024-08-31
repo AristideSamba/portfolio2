@@ -6,6 +6,7 @@
     --hover-color: #939597;
     --h1-color: #93441A;
     --footer-color: #F0EEE9;
+    --main-color: #FBFBFB;
 }
 
 /*Header*/
@@ -38,6 +39,7 @@ header{
     right: 5%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 50px;
 }
 .navbar ul{
@@ -132,10 +134,13 @@ header{
 }
 
 /*main*/
+main{
+    color: var(--main-color);
+}
 /*Première section*/
 .section-one{
     width: 30%;
-    margin: 50px 300px;
+    margin: 15px 300px;
 }
 .section-one h1{
     color: var(--h1-color);
@@ -148,7 +153,7 @@ header{
 /*Deuxième section*/
 .section-two{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 .section-two .contenu-accueil{
     display: flex;
@@ -156,7 +161,7 @@ header{
     justify-content: center;
 }
 .section-two .image-accueil{
-    width: 80%;
+    width: 40%;
     height: 55vh;
     overflow: hidden;
 }
@@ -172,24 +177,23 @@ header{
 }
 
 .section-two .text-accueil{
-    width: 50%;
+    width: 70%;
     height: 55vh;
     background-image: linear-gradient(to right, #212E53, #5784BA) ;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    justify-content: center;
-    padding: 0 40px;
+    padding: 35px 0 90px 90px;
 }
 .section-two .text-accueil .arrow-right{
     width: 80px;
-    height: 20px;
 }
 
 .section-two .text-accueil .arrow-right img{
     width: 100%;
     transition: .3s ease-in-out;
     padding: 10px;
+    margin: 0;
 }
 
 .section-two .text-accueil p span{
@@ -203,7 +207,61 @@ header{
     font-size: 3.5rem;
     font-weight: bold;
     color: #ffff;
-    line-height: 4rem;
+}
+
+/*Section 3*/
+.section-three{
+    margin-bottom: 60px;
+}
+.section-three h3{
+    text-align: center;
+    font-family: "Unica77-LL-TT", Helvetica, Arial, sans-serif;
+    color: var(--hover-color);
+    margin-bottom: 20px;
+}
+.section-three .apercu-projets{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 30px;
+    justify-content: center;
+}
+.section-three .apercu-projets .contenu-1,
+.section-three .apercu-projets .contenu-2,
+.section-three .apercu-projets .contenu-3{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--footer-color);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.2), 3px 3px 10px rgba(0,0,0, 0.2)inset ;
+}
+.section-three .apercu-projets .img-contenu{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.section-three .apercu-projets .img-contenu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.section-three .apercu-projets .contenu-1 h4,
+.section-three .apercu-projets .contenu-2 h4,
+.section-three .apercu-projets .contenu-3 h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--header-bgcolor);
+}
+.section-three .apercu-projets .contenu-1 p,
+.section-three .apercu-projets .contenu-2 p,
+.section-three .apercu-projets .contenu-3 p{
+    color: #939597;
+    font-size: 1.3rem;
 }
 
 /*apparition des éléments*/
@@ -228,11 +286,12 @@ footer .arrow{
     width: 140px;
     height: 60px;
     background-color: var(--footer-color);
-    border-top-left-radius: 90px;
-    border-top-right-radius: 90px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     padding: 0; 
     transition: .3s ease-in-out; 
     z-index: 100;
+    margin-bottom: -10px;
 }
 footer .arrow a{
     display: flex;
@@ -286,7 +345,7 @@ footer .navbar a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
         overflow: hidden;
     }
 
@@ -300,7 +359,7 @@ footer .navbar a:hover{
     }
     .section-two .text-accueil p{
         font-size: 2.5rem;
-        line-height: 3.5rem;
+        line-height: 3rem;
     }
     .navbar .separateur{
         display: block;
@@ -333,10 +392,25 @@ footer .navbar a:hover{
         right: 10px;
         z-index: 1000;
     }
+   
+    /*Section trois*/
+    .section-three h3{
+        font-size: 1rem;
+    }
+    .section-three .apercu-projets{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 500px){
-
+    header .navbar{
+        height: 50vh;
+    }
+    .navbar ul li a{
+        font-size: 1.6rem;
+    }
     .section-one{
         margin: 30px 50px;
     }
@@ -359,9 +433,6 @@ footer .navbar a:hover{
         width: 70%;
         left: 15%;
     }
-    .section-two{
-        margin-bottom: 200px;
-    }
     .section-two .contenu-accueil{
         flex-direction: column;
     }
@@ -375,13 +446,19 @@ footer .navbar a:hover{
     .section-two .text-accueil{
         height: 200px;
         width: 100%;
-        padding: 0 20px;
-        gap: 2px;
+        padding: 10px 40px;
     }
 
     .section-two .text-accueil p span{
         line-height: 2rem;
         letter-spacing: .4rem;
         font-size: 1.2rem;
+    }
+    /*Section3*/
+    .section-three .apercu-projets .contenu-1,
+    .section-three .apercu-projets .contenu-2,
+    .section-three .apercu-projets .contenu-3{
+        margin-right: 30px;
+        margin-left: 30px;
     }
 }
